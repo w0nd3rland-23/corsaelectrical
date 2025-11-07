@@ -1,0 +1,336 @@
+/* === GLOBAL === */
+body {
+  scroll-behavior: smooth;
+  padding-top: 4rem; /* same height as header */
+  font-family: 'Argentum Sans', sans-serif;
+  background-color: #fff;
+  color: #0e1133;
+  line-height: 1.6;
+}
+
+h4 {
+  font-weight: 800;
+  font-size: large;
+  padding-bottom: 1rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* === HEADER === */
+.site-header {
+  background: #0e1133;
+  color: white;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo-img img {
+  height: 2.5rem;
+  width: auto;
+  display: block;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #d1d5db;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #f5bb18;
+}
+
+/* Phone link */
+.phone-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #f5bb18 !important;
+  font-weight: 600;
+}
+
+.phone-link i {
+  font-size: 1rem;
+}
+
+/* === HERO === */
+.hero {
+  text-align: center;
+  background: #f5bb18;
+  color: #0e1133;
+  padding: 8rem 1rem 6rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.btn-dark {
+  background: #0e1133;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  transition: background 0.3s;
+}
+
+.btn-dark:hover {
+  background: #1a1c4b;
+}
+
+/* === SERVICES === */
+.section-light {
+  background: #f9fafb;
+  padding: 5rem 1rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* === CARD FLIP EFFECT === */
+.card-flip {
+  perspective: 1000px;
+  height: 320px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.card-flip:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.card-front {
+  background: white;
+}
+
+.card-back {
+  background: #f5bb18;
+  color: #0e1133;
+  transform: rotateY(180deg);
+}
+
+.icon-yellow {
+  color: #f5bb18;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 auto 1rem;
+}
+
+.card-back h4 {
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.service-list {
+  text-align: left;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.service-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* === ABOUT === */
+.section {
+  padding: 5rem 1rem;
+}
+
+.max-w-md {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* === CONTACT === */
+.section-dark {
+  background: #0e1133;
+  color: white;
+  padding: 5rem 1rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s;
+}
+
+.contact-links a:hover {
+  color: #facc15;
+}
+
+/* === FOOTER === */
+.footer {
+  background: #0e1133;
+  color: #9ca3af;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+/* === SERVICE AREAS === */
+.service-areas-section {
+  background-color: #f5bb18;
+  padding: 3rem 1rem;
+}
+
+.suburb-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-size: 0.9rem;
+}
+
+.suburb-card h5 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.suburb-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.suburb-card ul li {
+  margin-bottom: 0.25rem;
+}
+
+/* === RESPONSIVE TWEAKS === */
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .card-front,
+  .card-back {
+    padding: 2rem 1.5rem;
+  }
+
+  .nav-links a {
+    margin-left: 1rem;
+  }
+}
+/* === MOBILE NAVIGATION === */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #0e1133;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 999;
+  }
+
+  .nav-links a {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    color: #e5e7eb;
+  }
+
+  .nav-links a:hover {
+    color: #f5bb18;
+  }
+
+  .nav-links.hidden {
+    display: none;
+  }
+}

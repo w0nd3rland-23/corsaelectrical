@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corsa Electrical</title>
+
+    <!-- Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Argentum+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="site-header">
+  <div class="container flex-between">
+    <div class="logo-img">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Corsa Electrical Logo">
+      </a>
+    </div>
+
+    <!-- Hamburger button -->
+    <button id="menu-toggle" class="hamburger md:hidden text-white text-2xl focus:outline-none">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav id="nav-menu" class="nav-links hidden md:flex">
+      <a href="index.html">Home</a>
+      <a href="#services">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:0487432727" class="phone-link">
+        <i class="fa-solid fa-phone"></i> 0487 432 727
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+
+
+    <!-- Hero -->
+    <section class="hero">
+      <h2>Reliable, Local, and Safe Electrical Services</h2>
+      <p>
+        From home installations to commercial projects, Corsa Electrical Contractors
+        delivers quality and care you can trust.
+      </p>
+      <a href="#contact" class="btn-dark">Get in Touch</a>
+    </section>
+
+<!-- Services -->
+<section id="services" class="section-light">
+  <div class="container">
+    <h3 class="section-title">Our Services</h3>
+    <div class="grid">
+
+      <!-- Residential -->
+      <div class="card-flip">
+        <div class="card-inner">
+          <div class="card-front">
+            <i data-lucide="home" class="icon-yellow"></i>
+            <h4>Residential</h4>
+            <p>Wiring, lighting, switchboards, and safety checks for your home.</p>
+          </div>
+          <div class="card-back">
+            <h4>Residential</h4>
+            <ul class="service-list">
+              <li>LED lighting upgrades</li>
+              <li>Power point installations</li>
+              <li>Smoke alarms</li>
+              <li>Switchboard upgrades</li>
+              <li>Ceiling Fans</li>
+               <li>Appliances</li>
+               <li>Repairs and fault finding </li>
+               <li>Rental Safety Checks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Commercial -->
+      <div class="card-flip">
+        <div class="card-inner">
+          <div class="card-front">
+            <i data-lucide="wrench" class="icon-yellow"></i>
+            <h4>Commercial</h4>
+            <p>Reliable electrical solutions for offices, shops, and new developments.</p>
+          </div>
+          <div class="card-back">
+            <h4>Commercial</h4>
+            <ul class="service-list">
+              <li>Underground mains upgrades</li>
+              <li>Mains/distribution boards</li> 
+              <li>Emergency lighting</li>
+              <li>Test & tag services</li>
+              <li>Temporary power installations</li>
+              <li>Office and shop fit-outs</li>            
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container text-center">
+        <h3 class="section-title">About Us</h3>
+        <p class="max-w-md mx-auto">
+Based in West Melbourne, Corsa Electrical Contractors Pty Ltd is a locally owned business dedicated to providing safe, professional, and efficient electrical services. From small residential jobs to commercial or industrial construction, we pride ourselves on delivering quality workmanship and reliable results every time.
+        </p>
+        <br>
+      <p class="max-w-md mx-auto">
+Corsa Electrical Contractors is owned and operated by Adam Brock, a licensed electrician and registered electrical contractor. With extensive experience on the tools and coordinating residential, commercial and industrial construction projects, Adam ensures his projects meet deadlines, while maintaining the highest safety standards. 
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-dark">
+      <div class="container text-center">
+        <h3 class="section-title text-yellow-400">Get in Touch</h3>
+        <p class="mb-8">
+          Reach out for quotes or general enquiries.
+        </p>
+        <div class="contact-links">
+          <a href="tel:0487432727"><i data-lucide="phone"></i> 0487 432 727</a>
+          <a href="mailto:adam@corsaelectrical.com.au"
+            ><i data-lucide="mail"></i> adam@corsaelectrical.com.au</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>REC 37329</p>
+      © <script>document.write(new Date().getFullYear())</script> Corsa Electrical Contrators Pty Ltd. All rights reserved.
+    </footer>
+
+    <script>
+      lucide.createIcons();
+    
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  const icon = menuToggle.querySelector('i');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+    navMenu.classList.toggle('flex');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-xmark');
+  });
+
+
+    </script>
+  </body>
+</html>
