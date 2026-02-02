@@ -3,21 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Corsa Electrical</title>
+  <title>About Us - Corsa Electrical | Licensed Melbourne Electricians</title>
+  <meta name="description" content="Learn about Corsa Electrical Contractors and owner Adam Brock. Licensed electrician serving Melbourne suburbs and Geelong with professional electrical services.">
 
   <!-- Favicon -->
-<!-- Favicon -->
-<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="/img/favicon.ico">
-
-
-  <!-- Tailwind CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/img/favicon.ico">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/styles.css" />
@@ -26,110 +18,320 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Argentum+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- Header -->
   <header class="site-header">
-    <div class="container flex-between">
-      <div class="logo-img">
-        <a href="/">
-          <img src="/img/logo.png" alt="Corsa Electrical Logo">
+    <div class="header-container">
+      <div class="logo-wrapper">
+        <a href="/" aria-label="Corsa Electrical Home">
+          <img src="/img/logo.png" alt="Corsa Electrical Logo" class="logo-img">
         </a>
       </div>
 
       <!-- Hamburger button -->
-      <button id="menu-toggle" class="hamburger md:hidden text-white text-2xl focus:outline-none">
-        <i class="fa-solid fa-bars"></i>
+      <button id="menu-toggle" class="hamburger" aria-label="Toggle menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
       </button>
 
       <!-- Navigation -->
-      <nav id="nav-menu" class="nav-links hidden md:flex">
-        <a href="/">Home</a>
-        <a href="/#services">Services</a>
-        <a href="/about/">About</a>
-        <a href="/contact/">Contact</a>
-        <a href="tel:0487432727" class="phone-link">
-          <i class="fa-solid fa-phone"></i> 0487 432 727
+      <nav id="nav-menu" class="nav-menu">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/#services" class="nav-link">Services</a>
+        <a href="/about/" class="nav-link">About</a>
+        <a href="/contact/" class="nav-link">Contact</a>
+        <a href="tel:0487432727" class="nav-phone">
+          <i data-lucide="phone" class="phone-icon"></i>
+          <span>0487 432 727</span>
         </a>
       </nav>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main class="pt-24">
-    <!-- About Section -->
-    <section class="max-w-4xl mx-auto text-center py-12 px-4">
-      <h2 class="text-3xl font-bold mb-6">About Us</h2>
-      <p class="mb-8">
-        Based in West Melbourne, Corsa Electrical Contractors Pty Ltd is a locally owned business dedicated to providing safe, professional, and efficient electrical services. From small residential jobs to commercial or industrial construction, we pride ourselves on delivering quality workmanship and reliable results every time.
-      </p>
-      <p>
-        Corsa Electrical Contractors is owned and operated by Adam Brock, a licensed electrician and registered electrical contractor. With extensive experience on the tools and coordinating residential, commercial and industrial construction projects, Adam ensures his projects meet deadlines, while maintaining the highest safety standards.
-      </p>
-    </section>
-
-    <!-- Service Areas Section -->
-    <section class="service-areas-section py-12">
-      <div class="container max-w-4xl mx-auto text-center">
-        <h4 class="text-3xl font-bold mb-8 text-gray-900">Service Areas</h4>
-
-        <!-- Melbourne CBD & Inner Suburbs -->
-        <details class="mb-4 text-left bg-white p-4 rounded-lg shadow">
-          <summary class="font-semibold text-lg cursor-pointer">Melbourne CBD & Inner Suburbs</summary>
-          <p class="mt-2">Melbourne CBD, Docklands, Southbank, Carlton, North Melbourne, East Melbourne, West Melbourne, Fitzroy, Fitzroy North, Collingwood, Richmond</p>
-        </details>
-
-        <!-- Western Suburbs -->
-        <details class="mb-4 text-left bg-white p-4 rounded-lg shadow">
-          <summary class="font-semibold text-lg cursor-pointer">Western Suburbs</summary>
-          <p class="mt-2">Footscray, Yarraville, Seddon, Spotswood, Maribyrnong, Williamstown, Newport, Altona, Moonee Ponds, Essendon, Flemington, Kensington, Ascot Vale, Sunshine, West Footscray, Braybrook, Deer Park, Werribee, Hoppers Crossing, Point Cook, Laverton, Altona Meadows, Tarneit</p>
-        </details>
-
-        <!-- Eastern & Southern Suburbs -->
-        <details class="mb-4 text-left bg-white p-4 rounded-lg shadow">
-          <summary class="font-semibold text-lg cursor-pointer">Eastern & Southern Suburbs</summary>
-          <p class="mt-2">Hawthorn, Hawthorn East, Kew, Kew East, Camberwell, Balwyn, Balwyn North, Surrey Hills, Canterbury, Glen Iris, Malvern, Malvern East, Toorak, Armadale, Box Hill, Burwood, Ashburton, Chadstone, Mount Waverley, Glen Waverley, Vermont, Vermont South, Forest Hill, Blackburn, Blackburn North, Blackburn South, Mitcham, Nunawading, Doncaster, Doncaster East, Templestowe, Templestowe Lower, Bulleen, Warrandyte, Park Orchards, Ringwood, Ringwood East, Ringwood North, Croydon, Croydon Hills, Croydon South, Bayswater, Bayswater North, Boronia, Ferntree Gully, Wantirna, Wantirna South, Scoresby, Rowville, Lysterfield, Lilydale, Mooroolbark, Montrose, Kilsyth, Heathmont, Blackburn Lake, Burwood East, Clarinda, Clayton, Oakleigh, Carnegie, Bentleigh, Bentleigh East, Ormond, Murrumbeena, Brighton, Brighton East, Hampton, Sandringham, Highett, Cheltenham, Beaumaris, Black Rock</p>
-        </details>
-
-        <!-- Northern Suburbs -->
-        <details class="mb-4 text-left bg-white p-4 rounded-lg shadow">
-          <summary class="font-semibold text-lg cursor-pointer">Northern Suburbs</summary>
-          <p class="mt-2">Brunswick, Brunswick East, Brunswick West, Coburg, Coburg North, Pascoe Vale, Pascoe Vale South, Preston, Reservoir, Thornbury, Northcote, Fairfield, Ivanhoe, Ivanhoe East, Heidelberg, Heidelberg Heights, Heidelberg West, Bundoora, Mill Park, Thomastown, Epping, Lalor, Mernda, Doreen, Greensborough, Watsonia, Eltham, Montmorency, Diamond Creek, Templestowe, Rosanna</p>
-        </details>
-
-        <!-- Geelong & Surrounding Areas -->
-        <details class="mb-4 text-left bg-white p-4 rounded-lg shadow">
-          <summary class="font-semibold text-lg cursor-pointer">Geelong & Surrounding Areas</summary>
-          <p class="mt-2">Geelong CBD, Belmont, Newtown, Grovedale, Waurn Ponds, Highton, Norlane, Corio, North Geelong, East Geelong, Lara</p>
-        </details>
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="page-header-content">
+      <div class="page-header-badge">
+        <i data-lucide="users"></i>
+        <span>About Us</span>
       </div>
-    </section>
-  </main>
+      <h1>Your Trusted Melbourne Electrician</h1>
+      <p>Professional, reliable, and safe electrical services for homes and businesses across Melbourne.</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="about-page-section">
+    <div class="about-page-container">
+      <div class="about-page-grid">
+        <div class="about-page-content">
+          <h2>Who We Are</h2>
+          <p>
+            Based in West Melbourne, Corsa Electrical Contractors Pty Ltd is a locally owned business dedicated to providing safe, professional, and efficient electrical services throughout Melbourne and Geelong.
+          </p>
+          <p>
+            From small residential repairs to large-scale commercial and industrial construction projects, we pride ourselves on delivering quality workmanship and reliable results every time. Our commitment to safety, professionalism, and customer satisfaction has made us a trusted name in Melbourne's electrical services industry.
+          </p>
+          
+          <div class="values-grid">
+            <div class="value-item">
+              <div class="value-icon">
+                <i data-lucide="shield-check"></i>
+              </div>
+              <h3>Safety First</h3>
+              <p>All work completed to Australian Standards with full compliance and certification.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <i data-lucide="award"></i>
+              </div>
+              <h3>Quality Work</h3>
+              <p>Professional workmanship and attention to detail on every project, big or small.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <i data-lucide="handshake"></i>
+              </div>
+              <h3>Customer Focus</h3>
+              <p>Clear communication, transparent pricing, and reliable service you can trust.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <i data-lucide="clock"></i>
+              </div>
+              <h3>On Time</h3>
+              <p>Respect for your schedule with punctual service and timely project completion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Owner Section -->
+  <section class="owner-section">
+    <div class="owner-container">
+      <div class="owner-image-wrapper">
+        <div class="owner-image-placeholder">
+          <i data-lucide="user"></i>
+        </div>
+      </div>
+      <div class="owner-content">
+        <span class="section-label">Meet the Owner</span>
+        <h2>Adam Brock</h2>
+        <p class="owner-position">Licensed Electrician & Director</p>
+        <div class="owner-credentials">
+          <div class="credential">
+            <i data-lucide="shield-check"></i>
+            <span>Registered Electrical Contractor (REC 37329)</span>
+          </div>
+          <div class="credential">
+            <i data-lucide="award"></i>
+            <span>Fully Licensed & Insured</span>
+          </div>
+        </div>
+        <p>
+          Corsa Electrical Contractors is owned and operated by Adam Brock, a licensed electrician with extensive experience in residential, commercial, and industrial electrical work. With years of hands-on experience and a proven track record in coordinating complex construction projects, Adam brings both technical expertise and strong project management skills to every job.
+        </p>
+        <p>
+          Adam's commitment to excellence ensures that every project is completed on time, within budget, and to the highest safety standards. Whether it's a simple home repair or a multi-stage commercial installation, Adam personally oversees each job to guarantee quality results and customer satisfaction.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="service-areas-page">
+    <div class="service-areas-container">
+      <div class="section-header centered">
+        <span class="section-label">Where We Work</span>
+        <h2 class="section-title">Service Areas</h2>
+        <p class="section-description">
+          We proudly service homes and businesses across Melbourne and Geelong. If you're not sure if we cover your area, give us a call.
+        </p>
+      </div>
+
+      <div class="areas-grid">
+        <div class="area-card">
+          <div class="area-icon">
+            <i data-lucide="building"></i>
+          </div>
+          <h3>Melbourne CBD & Inner Suburbs</h3>
+          <p>Melbourne CBD, Docklands, Southbank, Carlton, North Melbourne, East Melbourne, West Melbourne, Fitzroy, Fitzroy North, Collingwood, Richmond</p>
+        </div>
+
+        <div class="area-card">
+          <div class="area-icon">
+            <i data-lucide="home"></i>
+          </div>
+          <h3>Western Suburbs</h3>
+          <p>Footscray, Yarraville, Seddon, Spotswood, Maribyrnong, Williamstown, Newport, Altona, Moonee Ponds, Essendon, Flemington, Kensington, Ascot Vale, Sunshine, West Footscray, Braybrook, Deer Park, Werribee, Hoppers Crossing, Point Cook, Laverton, Altona Meadows, Tarneit</p>
+        </div>
+
+        <div class="area-card">
+          <div class="area-icon">
+            <i data-lucide="map-pin"></i>
+          </div>
+          <h3>Eastern & Southern Suburbs</h3>
+          <p>Hawthorn, Kew, Camberwell, Balwyn, Surrey Hills, Canterbury, Glen Iris, Malvern, Toorak, Armadale, Box Hill, Burwood, Ashburton, Chadstone, Mount Waverley, Glen Waverley, Vermont, Forest Hill, Blackburn, Mitcham, Nunawading, Doncaster, Templestowe, Bulleen, Ringwood, Croydon, Bayswater, Boronia, Ferntree Gully, Wantirna, Scoresby, Rowville, Lilydale, Mooroolbark, Brighton, Hampton, Sandringham, Cheltenham, Beaumaris</p>
+        </div>
+
+        <div class="area-card">
+          <div class="area-icon">
+            <i data-lucide="compass"></i>
+          </div>
+          <h3>Northern Suburbs</h3>
+          <p>Brunswick, Coburg, Pascoe Vale, Preston, Reservoir, Thornbury, Northcote, Fairfield, Ivanhoe, Heidelberg, Bundoora, Mill Park, Thomastown, Epping, Lalor, Mernda, Doreen, Greensborough, Watsonia, Eltham, Montmorency, Diamond Creek, Rosanna</p>
+        </div>
+
+        <div class="area-card">
+          <div class="area-icon">
+            <i data-lucide="map"></i>
+          </div>
+          <h3>Geelong & Surrounding Areas</h3>
+          <p>Geelong CBD, Belmont, Newtown, Grovedale, Waurn Ponds, Highton, Norlane, Corio, North Geelong, East Geelong, Lara</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Work With Us?</h2>
+        <p class="cta-description">
+          Get in touch today for a quote or to discuss your electrical needs. 
+          We're here to help with expert advice and professional service.
+        </p>
+        <div class="cta-buttons">
+          <a href="/contact/" class="btn-primary large">
+            <i data-lucide="mail"></i>
+            Get a Quote
+          </a>
+          <a href="tel:0487432727" class="btn-secondary large">
+            <i data-lucide="phone"></i>
+            0487 432 727
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>REC 37329</p>
-    © <script>document.write(new Date().getFullYear())</script> Corsa Electrical Contractors Pty Ltd. All rights reserved.
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="/img/logo.png" alt="Corsa Electrical Logo" class="footer-logo">
+          <p class="footer-tagline">
+            Professional electrical services for Melbourne homes and businesses.
+          </p>
+          <div class="footer-license">
+            <i data-lucide="shield-check"></i>
+            <span>Registered Electrical Contractor • REC 37329</span>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/#services">Services</a></li>
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="/#services">Residential Electrical</a></li>
+              <li><a href="/#services">Commercial Electrical</a></li>
+              <li><a href="/#services">Industrial Electrical</a></li>
+              <li><a href="/about/">Service Areas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="tel:0487432727">0487 432 727</a></li>
+<li>  <a href="#" id="email-adam-footer">adam@corsaelectrical.com.au</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Corsa Electrical Contractors Pty Ltd. All rights reserved.</p>
+        <p class="footer-small">Licensed Electrician Melbourne • REC 37329</p>
+      </div>
+    </div>
   </footer>
 
-  <!-- Scripts -->
-  <script>
-    // Lucide icons
-    lucide.createIcons();
+<!-- Scripts -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Lucide icons
+    if (window.lucide) {
+      lucide.createIcons();
+      console.log('Lucide icons initialized');
+    } else {
+      console.error('Lucide not found');
+    }
 
-    // Hamburger menu
+    // Set current year
+    const yearEl = document.getElementById('current-year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // Hamburger menu toggle
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
-    const icon = menuToggle.querySelector('i');
 
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('hidden');
-      navMenu.classList.toggle('flex');
-      icon.classList.toggle('fa-bars');
-      icon.classList.toggle('fa-xmark');
+    if (menuToggle && navMenu) {
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+      });
+
+      // Close menu when clicking a nav link
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          menuToggle.classList.remove('active');
+          navMenu.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        });
+      });
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
     });
-  </script>
+  });
+   document.getElementById("email-adam-footer").addEventListener("click", function (e) {
+    e.preventDefault();
+    const p1 = "adam";
+    const p2 = "@corsaelectrical";
+    const p3 = ".com.au";
+    window.location.href = "mailto:" + p1 + p2 + p3;
+  });
+</script>
 </body>
 </html>
