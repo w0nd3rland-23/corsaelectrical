@@ -975,7 +975,7 @@ p {
 }
 
 .footer-logo {
-  height: 36px; /* 80% of 45px */
+  height: 48px;
   width: auto;
   margin-bottom: 1.2rem;
 }
